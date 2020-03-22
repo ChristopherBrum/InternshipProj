@@ -1,5 +1,4 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
 import './Navigation.css'
 import MenuLogo from '../Images/menu-icon.jpg';
 import MenuBasket from '../Images/basket-icon.jpg';

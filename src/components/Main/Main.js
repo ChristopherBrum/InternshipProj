@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import './Main.css';
-import Carousel from 'react-bootstrap/Carousel';
 
 function Main() {
-  let images = [
+  const images = [
     "https://i.ibb.co/dKpJ5cB/Screenshot-2020-03-22-12-47-39.png", "https://i.ibb.co/JqbpxBC/Screenshot-2020-03-22-12-50-42.png", "https://i.ibb.co/Qfm3p8J/Screenshot-2020-03-22-12-51-00.png", "https://i.ibb.co/J50GBS5/Screenshot-2020-03-22-12-51-12.png", "https://i.ibb.co/rk0pdQw/Screenshot-2020-03-22-12-51-26.png", 
     "https://i.ibb.co/yN3LmZr/Screenshot-2020-03-22-12-51-38.png", "https://i.ibb.co/njvFnXn/Screenshot-2020-03-22-12-51-51.png", "https://i.ibb.co/w0Wwg4m/Screenshot-2020-03-22-12-52-08.png", "https://i.ibb.co/2FkxcKj/Screenshot-2020-03-22-12-52-20.png", "https://i.ibb.co/94QSGbz/Screenshot-2020-03-22-12-52-30.png", 
     "https://i.ibb.co/QN3KQc8/Screenshot-2020-03-22-12-52-46.png", "https://i.ibb.co/7KrYVhn/Screenshot-2020-03-22-12-52-59.png", "https://i.ibb.co/BcMWyx0/Screenshot-2020-03-22-12-53-11.png", "https://i.ibb.co/rfKkGHv/Screenshot-2020-03-22-12-53-21.png", "https://i.ibb.co/RBDRmWV/Screenshot-2020-03-22-12-53-31.png", 
@@ -13,51 +12,47 @@ function Main() {
 
   const [mainPic, setMainPic] = useState(images[0])
 
-  function displayMain(arr) {
-    mainPic = images
+  const displayMain = () => {
+    return(
+      <div>
+        <img
+          id="main-pic"
+          className="img-fluid"
+          src={mainPic}
+          alt="First slide"
+          fluid
+        />
+      </div>
+    )
   }
+
+  const getSlides = () => {
+    let slideArr = []
+    for(let i = 0; i < 4; i++) {
+      let slide = images[images.indexOf(mainPic) + i]
+      slideArr.push(slide)
+    }
+    return slideArr
+  }
+
+  const displaySlides = () =>
+    getSlides().map(slide => (
+      <img
+        id="side-pic"
+        className="img-fluid"
+        src={slide}
+        alt="First slide"
+        fluid
+      />
+    )
+  )
 
   return(
     <div className="main-container">
       <div className="carousel-container">
-        <div>
-            <img
-              id="main-pic"
-              className="img-fluid"
-              src="https://i.ibb.co/dKpJ5cB/Screenshot-2020-03-22-12-47-39.png"
-              alt="First slide"
-              fluid
-            />
-          </div>
+        {displayMain()}
         <div className="image-scroll">
-          <img
-            id="side-pic"
-            className="img-fluid"
-            src="https://i.ibb.co/JqbpxBC/Screenshot-2020-03-22-12-50-42.png"
-            alt="First slide"
-            fluid
-          />
-          <img
-            id="side-pic"
-            className="img-fluid"
-            src="https://i.ibb.co/Qfm3p8J/Screenshot-2020-03-22-12-51-00.png"
-            alt="First slide"
-            fluid
-          />
-          <img
-            id="side-pic"
-            className="img-fluid"
-            src="https://i.ibb.co/J50GBS5/Screenshot-2020-03-22-12-51-12.png"
-            alt="First slide"
-            fluid
-          />
-          <img
-            id="side-pic"
-            className="img-fluid"
-            src="https://i.ibb.co/rk0pdQw/Screenshot-2020-03-22-12-51-26.png"
-            alt="First slide"
-            fluid
-          />
+          {displaySlides()}
         </div>
       </div>
     </div>
