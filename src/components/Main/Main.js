@@ -4,10 +4,11 @@ import Carousel from 'react-bootstrap/Carousel';
 
 function Main() {
   let images = [
-    "https://i.ibb.co/FWrdyLR/pic1.png", "https://i.ibb.co/5WNLLJp/pic2.png", "https://i.ibb.co/HTLkkDd/pic3.png", "https://i.ibb.co/8PwpxXL/pic4.png", "https://i.ibb.co/WfvQDwF/pic5.png", "https://i.ibb.co/T4GgJkK/pic6.png",
-    "https://i.ibb.co/98y5vXM/pic7.png", "https://i.ibb.co/dmQLcd3/pic8.png", "https://i.ibb.co/8dYhsYT/pic9.png", "https://i.ibb.co/JqdVH1x/pic10.png", "https://i.ibb.co/gdYmMPn/pic11.png", "https://i.ibb.co/Ntby7HP/pic12.png", 
-    "https://i.ibb.co/0BjfSGL/pic13.png", "https://i.ibb.co/NNKWyN0/pic14.png", "https://i.ibb.co/C6B7Zxw/pic15.png", "https://i.ibb.co/KwnZcGn/pic16.png", "https://i.ibb.co/KzgW1Mv/pic17.png", "https://i.ibb.co/85vYtnZ/pic18.png",
-    "https://i.ibb.co/SvXnrGz/pic19.png", "https://i.ibb.co/z8dQqFQ/pic20.png", "https://i.ibb.co/fD0m07W/pic21.png"
+    "https://i.ibb.co/dKpJ5cB/Screenshot-2020-03-22-12-47-39.png", "https://i.ibb.co/JqbpxBC/Screenshot-2020-03-22-12-50-42.png", "https://i.ibb.co/Qfm3p8J/Screenshot-2020-03-22-12-51-00.png", "https://i.ibb.co/J50GBS5/Screenshot-2020-03-22-12-51-12.png", "https://i.ibb.co/rk0pdQw/Screenshot-2020-03-22-12-51-26.png", 
+    "https://i.ibb.co/yN3LmZr/Screenshot-2020-03-22-12-51-38.png", "https://i.ibb.co/njvFnXn/Screenshot-2020-03-22-12-51-51.png", "https://i.ibb.co/w0Wwg4m/Screenshot-2020-03-22-12-52-08.png", "https://i.ibb.co/2FkxcKj/Screenshot-2020-03-22-12-52-20.png", "https://i.ibb.co/94QSGbz/Screenshot-2020-03-22-12-52-30.png", 
+    "https://i.ibb.co/QN3KQc8/Screenshot-2020-03-22-12-52-46.png", "https://i.ibb.co/7KrYVhn/Screenshot-2020-03-22-12-52-59.png", "https://i.ibb.co/BcMWyx0/Screenshot-2020-03-22-12-53-11.png", "https://i.ibb.co/rfKkGHv/Screenshot-2020-03-22-12-53-21.png", "https://i.ibb.co/RBDRmWV/Screenshot-2020-03-22-12-53-31.png", 
+    "https://i.ibb.co/FJmjBF6/Screenshot-2020-03-22-12-53-58.png", "https://i.ibb.co/1m1S2dP/Screenshot-2020-03-22-12-54-16.png", "https://i.ibb.co/zQRbCRr/Screenshot-2020-03-22-12-54-27.png", "https://i.ibb.co/SJkHRVn/Screenshot-2020-03-22-12-54-40.png", "https://i.ibb.co/rZC0rV6/Screenshot-2020-03-22-12-54-52.png", 
+    "https://i.ibb.co/tPSMgL0/Screenshot-2020-03-22-12-55-03.png"
   ];
 
   const [mainPic, setMainPic] = useState(images[0])
@@ -19,19 +20,44 @@ function Main() {
   return(
     <div className="main-container">
       <div className="carousel-container">
-        <div className="my-carousel">
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="https://i.ibb.co/0X7z6RH/pic1.png"
-                alt="First slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-          <div className="image-scroll">
-
+        <div>
+            <img
+              id="main-pic"
+              className="img-fluid"
+              src="https://i.ibb.co/dKpJ5cB/Screenshot-2020-03-22-12-47-39.png"
+              alt="First slide"
+              fluid
+            />
           </div>
+        <div className="image-scroll">
+          <img
+            id="side-pic"
+            className="img-fluid"
+            src="https://i.ibb.co/JqbpxBC/Screenshot-2020-03-22-12-50-42.png"
+            alt="First slide"
+            fluid
+          />
+          <img
+            id="side-pic"
+            className="img-fluid"
+            src="https://i.ibb.co/Qfm3p8J/Screenshot-2020-03-22-12-51-00.png"
+            alt="First slide"
+            fluid
+          />
+          <img
+            id="side-pic"
+            className="img-fluid"
+            src="https://i.ibb.co/J50GBS5/Screenshot-2020-03-22-12-51-12.png"
+            alt="First slide"
+            fluid
+          />
+          <img
+            id="side-pic"
+            className="img-fluid"
+            src="https://i.ibb.co/rk0pdQw/Screenshot-2020-03-22-12-51-26.png"
+            alt="First slide"
+            fluid
+          />
         </div>
       </div>
     </div>

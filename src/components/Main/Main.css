@@ -1,24 +1,32 @@
 .main-container {
-  height: 100vh;
+  height: 1000px;
   width: 100%;
   background-color: #faf9f6;
 }
 
-.carousel-container {
-  height: 95vh;
+div.carousel-container {
+  height: 525px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.my-carousel {
-  width: 100%;
+div.image-scroll {
+  height: 100%;
+  width: 200px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
-.image-scroll {
-  height: 100%;
-  width: 250px;
+#main-pic {
+  height: auto;
+  max-width: 800px;
+}
+
+#side-pic {
+  height: auto;
+  width: 187px;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }

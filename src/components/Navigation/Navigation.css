@@ -1,12 +1,12 @@
 .nav-container {
   width: 100%;
-  height: 15vh;
+  height: 94px;
 }
   
 .nav-topper {
   background-color: rgb(82, 127, 136);
   width: 100%;
-  height: 35%;
+  height: 34px;
 }
 
 .topper-text {
@@ -41,15 +41,19 @@
 }
 
 .menu-nav {
-  width: 65vh;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
 }
 
 .menu-checkout {
-  width: 65vh;
+  width: 100%;
   display: flex;
   justify-content: flex-start;
+}
+
+h1.nav-com-name {
+  width: 5000px;
 }
 
 .menu-icon {
