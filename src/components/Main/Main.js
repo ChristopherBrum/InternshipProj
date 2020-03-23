@@ -37,7 +37,7 @@ function Main() {
 
   const displaySlides = () =>
     getSlides().map(slide => (
-      <img
+      <img onClick={() => setMainPic(slide)}
         id="side-pic"
         className="img-fluid"
         src={slide}
