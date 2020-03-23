@@ -12,7 +12,7 @@ function Main() {
 
   const [mainPic, setMainPic] = useState(images[0])
 
-  const displayMain = (checkMain) => {
+  const displayMain = () => {
     return(
       <div>
         <img
@@ -20,19 +20,18 @@ function Main() {
           className="img-fluid"
           src={mainPic}
           alt="First slide"
-          
         />
       </div>
     )
   }
 
-  const checkMain = () => {
-    if (mainPic.indexOf > 20){
-      return setMainPic(images[0])
-    } else {
-      return mainPic
-    }
-  }
+  // const checkMain = () => {
+  //   if (mainPic.indexOf > 20){
+  //     return setMainPic(images[0])
+  //   } else {
+  //     return mainPic
+  //   }
+  // }
 
   const getSlides = () => {
     let slideArr = []
@@ -51,7 +50,6 @@ function Main() {
         src={slide}
         alt="First slide"
         key={slide}
-        
       />
     )
   )

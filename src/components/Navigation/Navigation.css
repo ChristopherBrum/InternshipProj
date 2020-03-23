@@ -30,9 +30,9 @@
   align-items: center;
 }
 
-.nav-com-name {
+h1.nav-com-name {
   font-family: Quicksand;
-  width: 70vh;
+  width: 4550px;
   display: flex;  
   justify-content: center;
   color: #c5b376;
@@ -52,10 +52,6 @@
   width: 100%;
   display: flex;
   justify-content: flex-start;
-}
-
-h1.nav-com-name {
-  width: 4550px;
 }
 
 .menu-icon {
