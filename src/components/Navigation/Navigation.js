@@ -15,9 +15,10 @@ function Navigation() {
             <path fillRule="evenodd" d="M2.5 11.5A.5.5 0 013 11h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 7h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5zm0-4A.5.5 0 013 3h10a.5.5 0 010 1H3a.5.5 0 01-.5-.5z" clipRule="evenodd"/>
           </svg>
         </div>
-        <h1 className="nav-com-name">LUXURY</h1>
+        <h1 className="nav-com-name" onClick={() => window.location.href="https://luxome.com/"}>LUXURY</h1>
         <div className="menu-checkout">
           <img 
+          onClick={() => window.location.href="https://luxome.com/cart"}
           src={MenuBasket} 
           className="basket-icon"
           alt="basket icon"></img>

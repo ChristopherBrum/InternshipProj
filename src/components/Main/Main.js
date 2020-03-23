@@ -12,7 +12,7 @@ function Main() {
 
   const [mainPic, setMainPic] = useState(images[0])
 
-  const displayMain = () => {
+  const displayMain = (checkMain) => {
     return(
       <div>
         <img
@@ -24,6 +24,14 @@ function Main() {
         />
       </div>
     )
+  }
+
+  const checkMain = () => {
+    if (mainPic.indexOf > 20){
+      return setMainPic(images[0])
+    } else {
+      return mainPic
+    }
   }
 
   const getSlides = () => {

@@ -6,7 +6,8 @@
 .nav-topper {
   background-color: rgb(82, 127, 136);
   width: 100%;
-  height: 34px;
+  height: auto;
+  padding-bottom: 8px;
 }
 
 .topper-text {
@@ -31,7 +32,7 @@
 
 .nav-com-name {
   font-family: Quicksand;
-  width: 100%;
+  width: 70vh;
   display: flex;  
   justify-content: center;
   color: #c5b376;
