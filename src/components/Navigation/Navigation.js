@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navigation.css'
-import MenuBasket from '../Images/basket-icon.jpg';
+
+const MenuBasket = '/Images/basket-icon.jpg';
 
 function Navigation() {
 
