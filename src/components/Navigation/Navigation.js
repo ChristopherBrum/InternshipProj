@@ -1,9 +1,6 @@
 import React from 'react';
 import './Navigation.css'
-import MenuLogo from '../Images/menu-icon.jpg';
 import MenuBasket from '../Images/basket-icon.jpg';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faMenu } from '@fortawesome/free-solid-svg-icons'
 
 function Navigation() {
   // const menuIcon = <FontAwesomeIcon icon={faMenu} />
