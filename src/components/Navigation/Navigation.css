@@ -14,11 +14,12 @@
   font-size: 16px;
   padding-top: 1vh;
   margin: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   line-height: 20px;
-  font-family: Quicksand;
+  font-family: Quicksand; 
 }
 
 .nav-bottom {
@@ -34,7 +35,7 @@
   display: flex;  
   justify-content: center;
   color: #c5b376;
-  font-size: 3.5vh;
+  font-size: 23px;
   letter-spacing: 8px;
   font-weight: 500;
   margin-top: 1vh;

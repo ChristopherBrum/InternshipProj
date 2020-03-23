@@ -42,6 +42,7 @@ function Main() {
         className="img-fluid"
         src={slide}
         alt="First slide"
+        key={slide}
         fluid
       />
     )
@@ -50,9 +51,17 @@ function Main() {
   return(
     <div className="main-container">
       <div className="carousel-container">
-        {displayMain()}
-        <div className="image-scroll">
-          {displaySlides()}
+        <div className="images-container">
+          <div className="main-image-container">
+          {displayMain()}
+          </div>
+          <div className="image-scroll">
+            {displaySlides()}
+          </div>
+        </div>
+        <div>
+          <p className="sheets-desc">Premium Bamboo Sheets</p>
+          <p className="sheets-price">$104.99</p>
         </div>
       </div>
     </div>

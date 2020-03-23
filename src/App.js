@@ -10,7 +10,6 @@ function App() {
       <Navigation />
       <div className="spacer"></div>
       <Main />
-
     </div>
   );
 }

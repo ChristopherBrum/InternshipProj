@@ -5,10 +5,20 @@
 }
 
 div.carousel-container {
-  height: 525px;
+  height: 80vh;
   width: 100%;
+  display: inline-block;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-image-container {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+}
+
+.images-container {
+  display: flex;
   justify-content: center;
 }
 
@@ -21,7 +31,7 @@ div.image-scroll {
 
 #main-pic {
   height: auto;
-  max-width: 800px;
+  width: 800px;
 }
 
 #side-pic {
@@ -29,4 +39,19 @@ div.image-scroll {
   width: 187px;
   margin-left: 10px;
   margin-bottom: 10px;
+}
+
+.sheets-desc {
+  font-family: "Monotype Baskerville",serif;
+  font-size: 2.5rem;
+  line-height: 1.225;
+  color: #4a4a4a;
+  margin-top: 40px;
+}
+
+.sheets-price {
+  font-family: "Avenir Next",sans-serif;
+  font-size: 1rem;
+  line-height: 1.225;
+  color: #4a4a4a;
 }
