@@ -20,7 +20,7 @@ function Main() {
           className="img-fluid"
           src={mainPic}
           alt="First slide"
-          fluid
+          
         />
       </div>
     )
@@ -51,7 +51,7 @@ function Main() {
         src={slide}
         alt="First slide"
         key={slide}
-        fluid
+        
       />
     )
   )

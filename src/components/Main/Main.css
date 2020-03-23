@@ -27,6 +27,7 @@ div.image-scroll {
   width: 200px;
   display: flex;
   flex-direction: column;
+  margin-top: 1px;
 }
 
 #main-pic {
